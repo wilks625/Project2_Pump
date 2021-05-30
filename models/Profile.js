@@ -11,10 +11,6 @@ Profile.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     location: {
       type: DataTypes.INTEGER,
       allowNull: false,
