@@ -1,43 +1,74 @@
 [
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+
+    "username": "Computers4real" ,
+    "firstName": "Bill",
+    "lastName": "Winklehorn",
+    "email": "WinklehornB007@aol.com",
+    "password": "Trailmixed23"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "Pizza4me" ,
+    "firstName": "Alex",
+    "lastName": "Winklehorn",
+    "email": "WinklehornB006@yahoo.com",
+    "password": "2sexy4exercise"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "BigTyme" ,
+    "firstName": "Don",
+    "lastName": "Burgundy",
+    "email": "Burgandy@channel8news.com",
+    "password": "TooSwole4this"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "JacobisPumped",
+    "firstName": "Jacob",
+    "lastName": "Fransisco",
+    "email": "RunWitMe4fun@gmail.com",
+    "password": "Igot#theruns100"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "SebastianJ88",
+    "firstName": "Sebastian",
+    "lastName": "Jeffersly",
+    "email": "Jeffersly02@hotmail.com",
+    "password": "Bo$$88"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "MiricaleMuscles" ,
+    "firstName": "Robert",
+    "lastName": "Gatsby",
+    "email": "Gatsby@gmail.com",
+    "password": "Bobis2sexy"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "Rafeal98" ,
+    "firstName": "Rafeal",
+    "lastName": "Boardbottom",
+    "email": "BottomB@yahoo.com",
+    "password": "Started@Dabottom2"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "Kevin99" ,
+    "firstName": "Kevin",
+    "lastName": "Kandistidious",
+    "email": "StudiousK@gmail.com",
+    "password": "#Kevin400"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "McLuvin" ,
+    "firstName": "Marlon",
+    "lastName": "Davidson",
+    "email": "DavidsonM@aol.com",
+    "password": "#Cash69Money"
   },
   {
-    "email": "jacob@hotmail.com",
-    "password": "password12345"
+    "username": "Rod00" ,
+    "firstName": "Rodney",
+    "lastName": "Redwarn",
+    "email": "RedwarnR@hotmail.com",
+    "password": "#Read2me"
   }
 ]
 
