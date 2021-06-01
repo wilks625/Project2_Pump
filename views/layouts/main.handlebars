@@ -7,38 +7,143 @@
   <title>Fund My Project!</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
+  {{!-- down --}}
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-      
-    </footer>
-  </div>
 
-  <!-- Render script for logged in users only -->
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
-</body>
+
+  {{!-- carlos start nav --}}
+
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <div id="home">
+      <!----------------Navigation Start----------------->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#logout">LogOut</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    {{!-- carlos end nav --}}
+
+
+
+    {{!-- login start --}}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <div id="ui">
+            <h1 class="text-center">LOGIN FORM</h1>
+
+
+            <form class="form-group text-center">
+
+              <div class="row">
+              </div>
+              <br>
+              <div>
+                <div class="row">
+                  <!-- <div class="col-lg-6"> Original class value -->
+                  <div class="col-lg-12 col-sm-12 col-md-12 ">
+                    <label>E-mail:</label>
+                    <input type="text" name="fname" class="form-control" placeholder="Enter your email..">
+                    <br>
+                  </div>
+                  <div class="col-lg-12 col-sm-12">
+                    <label>Password:</label>
+                    <input type="text" name="lname" class="form-control" placeholder="Enter your password..">
+                    <br>
+                  </div>
+                </div>
+                <br>
+                <input type="submit" name="login" value="Log In" class="btn btn-primary btn-block btn-lg mb-4"></input>
+
+                <input type="submit" name="register" value="Create New Account"
+                  class="btn btn-success btn-block btn-lg"></input>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+    {{!-- login end --}}
+
+
+
+    <div class="flex-column justify-space-around">
+      <header class="display-flex justify-space-between align-center p-2">
+        <h1>
+          <span role="img" aria-label="money">💸</span>
+          <a href="/">Fund My Project!</a>
+        </h1>
+        <nav>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+          <a href="/profile">profile</a> |
+          <button class="no-button" id="logout">logout</button>
+          {{else}}
+          <a href="/login">login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main class="container container-fluid mt-5">
+        <!-- Render the sub layout -->
+        {{{ body }}}
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+
+
+
+    {{!-- script start --}}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+    {{!-- script end --}}
+  </body>
 
 </html>
