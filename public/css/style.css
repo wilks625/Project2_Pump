@@ -1,7 +1,6 @@
-header, .project:not(:last-child) {
+/* header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
-
 .no-button {
   background: none;
   border: none;
@@ -11,14 +10,108 @@ header, .project:not(:last-child) {
   text-decoration: none;
   font-size: 100%;
 }
-
 .no-button:hover {
   color: #065b83;
   text-decoration: underline;
 }
-
 .dollar-amount {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+} */
+nav {
+  background: #2e3135;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  
+}
+
+#ui {
+  color: white;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: #fff;
+  font-size: 1.5rem;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255,94,0);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(216, 117, 4);}
+.fa-github:hover {color: rgb(153, 153, 153);}
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*  NOTE: Up  */
+  /* margin: 6px; */
+  font-size: 25px;
+  cursor: pointer;
+}
+@media(max-width: 800px){
+  nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      transition: top 1s ease;
+      display: none;
+  }
+  nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+  nav .openMenu {
+      display: block;
+      
+  }
+  nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+      font-size: 1.6rem;
+  }
+  .icons i {
+      display: inline-block;
+      padding: 12px;
+  }
+}
+#ui{
+  background-color: #2e3135;
+  padding: 30px;
+  margin-top: 80px;
+  border-radius: 10px;
+  opacity:0.9;
+}
+#ui label,h1{
+  color: #fff;
 }
