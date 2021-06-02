@@ -14,6 +14,23 @@ router.get('/', async (req, res) => {
   }
 })
 
+router.get('/:id', async (req, res) => {
+  try {
+    const profileData = await Profile.findByPk(req.params.id, {
+      // include: {model: User}
+    })
+    // console.log(profileData)
+
+    if (!profileData) {
+      res.status(404).json({ message: 'No profile found with this id' })
+    } else {
+      res.status(200).json(profileData);
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 // router.post('/', withAuth, async (req, res) => {
 //   try {
 //     const newProfile = await Profile.create({

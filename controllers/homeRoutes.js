@@ -84,18 +84,19 @@ router.get('/matches', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['username'],
+          attributes: ['email', 'password', 'username', 'firstname', 'lastname'],
         },
       ],
     });
-
+console.log(profileData)
     // Serialize data so the template can read it
     const profiles = profileData.map((profile) => profile.get({ plain: true }));
     console.log(profiles)
 
+
     // Pass serialized data and session flag into template
     res.render('matches', { 
-      profiles, 
+      profiles,
       logged_in: req.session.logged_in 
     });
   } catch (err) {
