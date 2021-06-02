@@ -1,14 +1,18 @@
+<p>this information is hidden behind the nav bar</p>
+<p> -</p>
+
 {{#each profiles as |profiles| }}
 
-<p></p>
-{{username}}
-{{location}}
-{{bio}}
-{{activities}}
-{{snapchat}}
-{{instagram}}
-{{age}}
-{{phonenumber}}
-</p>
- 
+
+<h3>{{user.firstname}} {{user.lastname}}</h3>
+<p>{{user.username}}</p>
+<p>Activities: {{activities}}</p>  
+<p>Bio: {{bio}}</p>  
+<p>Age: {{age}}</p>  
+<p>Location: {{location}}</p>
+<p>snapchat: {{snapchat}}</p>  
+<p>instagram: {{instagram}}</p>  
+<p>email: {{user.email}}</p>  
+<p>phonenumber: {{phonenumber}}</p>  
+
 {{/each}}
