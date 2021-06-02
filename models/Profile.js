@@ -24,7 +24,7 @@ Profile.init(
       allowNull: false,
     },
     snapchat: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     instagram: {
@@ -32,11 +32,11 @@ Profile.init(
       allowNull: true,
     },
     age: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     phonenumber: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     user_id: {
