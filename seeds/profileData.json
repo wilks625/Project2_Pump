@@ -1,7 +1,7 @@
 [
   {
    "username":"Computers4real",
-   "location": 45679,
+   "location": 23173,
     "bio":"Did I mention I do Crossfit?!",
     "activities":"long, long walks on the beach, beach vollyball, auto auctions, opera, and ballet performances",
     "snapchat":"bill_4321",
@@ -11,7 +11,7 @@
   },
   {
     "username":"Pizza4me",
-   "location": 23234,
+   "location": 23218,
     "bio":"Did I meantion I bodybuild?!",
     "activities":"Eating, flexing, posing, dieting, checking myself out, looking pretty, and people watching",
     "snapchat":"Alex99",
@@ -22,7 +22,7 @@
   }, 
   {
     "username":"BigTyme",
-   "location": 25562,
+   "location": 23219,
     "bio":"Did I meantion I lift weights?!",
     "activities":"Picking things up and putting them down, getting swole, swelling, pumping, getting jacked, being massive ",
     "snapchat":"Werks_Out96",
@@ -31,8 +31,8 @@
     "phonenumber":"7578899345"
   },
   {
-    "username":"JacobisPumped",
-   "location": 23234,
+    "username":"Pump&Tone",
+   "location": 23220,
     "bio":"Did I meantion I love cardio?!",
     "activities":"Marathons, endurance races, hiking, biking, jogging",
     "snapchat":"jacob_12",
@@ -42,7 +42,7 @@
   },
   {
     "username":"SebastianJ88",
-   "location": 23236,
+   "location": 23221,
     "bio":"I like posing!",
     "activities":"BowFlex, bodysurfing, selfies, making new friends, and good music",
     "snapchat":"SeaBass88",
@@ -52,7 +52,7 @@
   },
   {
     "username":"MiricaleMuscles",
-   "location": 33546,
+   "location": 23222,
     "bio":"Did I meantion I workout, and do other things?!",
     "activities":"workingout, sight seeing, river rafting, canoeing, kiyacking, mountian hiking, shopping for Levis, shoe modeling",
     "snapchat":"BobinDahouse",
@@ -62,7 +62,7 @@
   },
   {
     "username":"Rafeal98",
-   "location": 88879,
+   "location": 23223,
     "bio":"I often frequent the gymnasium!",
     "activities":"handlebar mustaches, sightseeing, movies, couch sitting",
     "snapchat":"Rafeal_98",
@@ -72,7 +72,7 @@
   },
   {
     "username":"Kevin99",
-   "location": 23234,
+   "location": 23224,
     "bio":"Even the birds workout",
     "activities":"Gym, tan, repeat",
     "snapchat":"KevinHere",
@@ -82,7 +82,7 @@
   },
   {
     "username":"McLuvin",
-   "location": 23236,
+   "location": 23225,
     "bio":"I am a jack of all trades?!",
     "activities":"Driving, shopping, making it rain, gold chains, making you feel special :)",
     "snapchat":"McDaddy",
@@ -92,12 +92,112 @@
   },
   {
     "username":"Rod00",
-   "location": 23345,
+   "location": 23226,
     "bio":"I dabble in exercise!!",
     "activities":"Walking dogs, training everyone, long talks anywhere, avid smiler, book reading, cassette tapes",
     "snapchat":"Read4me",
     "instagram":"Well_Read",
     "age": "N/A",
     "phonenumber":"4345569978"
+  },
+  {
+     "username":"JacobisPumped",
+     "location": 23234,
+      "bio":"Did I meantion I lift weights?!",
+      "activities":"Bench Press, Cardio",
+      "snapchat":"jacob_12",
+      "instagram":"",
+      "age": 24,
+      "phonenumber": "8047733333"
+  },
+  {
+      "username":"Stephen0625",
+     "location": 23234,
+      "bio":"Join me for a run!",
+      "activities":"cardio, stair master, weights.",
+      "snapchat":"Wilks_625",
+      "instagram":"Wilks625",
+      "age": 27,
+      "phonenumber":""
+  }, 
+  {
+      "username":"Alexander12",
+     "location": 23234,
+      "bio":"Lift with me!",
+      "activities":"weight lifing, cardio.",
+      "snapchat":"alex_12",
+      "instagram":"",
+      "age": 25,
+      "phonenumber":"8043387456"
+  },
+  {
+      "username":"Carlos359",
+     "location": 23219,
+      "bio":"Looking for friends to workout with!",
+      "activities":"",
+      "snapchat":"carlos_359",
+      "instagram":"",
+      "age": 24,
+      "phonenumber":""
+  },
+  {
+      "username":"Izzy523",
+     "location": 23219,
+      "bio":"Cardio is life! Can you keep up?",
+      "activities":"Running, squats",
+      "snapchat":"izzy__52",
+      "instagram":"",
+      "age": 32,
+      "phonenumber":"8045778833"
+  },
+  {
+      "username":"EmilyLifts",
+     "location": 23234,
+      "bio":"Looking for friends. Meet me at Goold's!",
+      "activities":"Running",
+      "snapchat":"EdleB_22",
+      "instagram":"",
+      "age": 26,
+      "phonenumber":""
+  },
+  {
+      "username":"JohnB",
+     "location": 23234,
+      "bio":"Hiking anyone?!",
+      "activities":"Running, Hiking, Lifting",
+      "snapchat":"JhonnyBlaze",
+      "instagram":"",
+      "age": 29,
+      "phonenumber":"8045562222"
+  },
+  {
+      "username":"AmandaBynes",
+     "location": 23219,
+      "bio":"Do you run? Let's go!",
+      "activities":"",
+      "snapchat":"Amanda_626",
+      "instagram":"Cardio, dead lifing, squats",
+      "age": 28,
+      "phonenumber":"8046758844"
+  },
+  {
+      "username":"Jessica",
+     "location": 23234,
+      "bio":"Kick boxer looking for friends!",
+      "activities":"kick boxing",
+      "snapchat":"jess12",
+      "instagram":"",
+      "age": 24,
+      "phonenumber":""
+  },
+  {
+      "username":"Lisa22",
+     "location": 23234,
+      "bio":"New to working out, trainer needed!",
+      "activities":"open to exploring th gym",
+      "snapchat":"Lisa_1990",
+      "instagram":"",
+      "age": 30,
+      "phonenumber":"8045632345"
   }
 ]
