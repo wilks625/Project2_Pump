@@ -23,9 +23,8 @@
   },
   {
     "username": "Pump&Tone",
-    "firstName": "Jacob",
-    "lastName": "Fransisco",
-
+    "firstname": "Jacob",
+    "lastname": "Fransisco",
     "email": "RunWitMe4fun@gmail.com",
     "password": "Igot#theruns100"
   },
@@ -73,71 +72,71 @@
   },
   {
     "username": "JacobisPumped",
-    "firstName": "Jacob",
-    "lastName": "Johnson",
+    "firstname": "Jacob",
+    "lastname": "Johnson",
     "email": "JohnsonJ12@gmail.com",
     "password": "#Pumpup2X"
   },
   {
     "username": "Stephen0625",
-    "firstName": "Steve",
-    "lastName": "Wilkes",
+    "firstname": "Steve",
+    "lastname": "Wilkes",
     "email": "WilkesS625@yahoo.com",
     "password": "2sexy4this" 
   },
   {
     "username": "Alexander12",
-    "firstName": "Alex",
-    "lastName": "Vassoon",
+    "firstname": "Alex",
+    "lastname": "Vassoon",
     "email": "VassoonA89@gmail.com",
     "password": "123456"
   },
   {
     "username": "Carlos359",
-    "firstName": "Carlos",
-    "lastName": "Laramie",
+    "firstname": "Carlos",
+    "lastname": "Laramie",
     "email": "LaramieC43@gmail.com",
     "password": "111111" 
   },
   {
     "username": "Izzy523",
-    "firstName": "Izzy",
-    "lastName": "Oble",
+    "firstname": "Izzy",
+    "lastname": "Oble",
     "email": "ObleIsHere23@yahoo.com",
     "password": "@roadRash23"
   },
   {
     "username": "EmilyLifts",
-    "firstName": "Emily",
-    "lastName": "Edelbrock",
+    "firstname": "Emily",
+    "lastname": "Edelbrock",
     "email": "EdlebrockE22@gmail.com",
     "password": "Race4This" 
   },
   {
     "username": "JohnB",
-    "firstName": "John",
-    "lastName": "Blaze",
+    "firstname": "John",
+    "lastname": "Blaze",
     "email": "BlazeJ@hotmail.com",
     "password": "#BlazinJohn"
   },
   {
     "username": "AmandaBynes",
-    "firstName": "Amanda",
-    "lastName": "Bynes",
+    "firstname": "Amanda",
+    "lastname": "Bynes",
     "email": "BynesA626@gmail.com",
     "password": "Bynes626runs"
   },
   {
     "username": "Jessica",
-    "firstName": "Jessica",
-    "lastName": "Raile",
+    "firstname": "Jessica",
+    "lastname": "Raile",
     "email": "raileJ12@gmail.com",
     "password": "Kick2Success"
   },
   {
     "username": "Lisa22",
-    "firstName": "Lisa",
-    "lastName": "Bellward",
+    "firstname": "Lisa",
+    "lastname": "Bellward",
     "email": "BellwardL22@hotmail.com",
     "password": "BellsforLisa22" 
   }

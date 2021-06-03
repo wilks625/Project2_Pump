@@ -33,7 +33,7 @@ Profile.init(
     },
     age: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     phonenumber: {
       type: DataTypes.STRING,
