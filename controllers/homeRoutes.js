@@ -56,6 +56,30 @@ const { Profile, User } = require('../models');
 //   }
 // });
 
+//single macthes page
+router.get('/matches/:id', async (req, res) => {
+  try {
+    const profileData = await Profile.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['firstname', 'lastname'],
+        },
+      ],
+    });
+console.log(profileData)
+    const profile = profileData.get({ plain: true });
+
+    res.render('clickedMatch', {
+      ...profile,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+//end
+
 // Use withAuth middleware to prevent access to route
 router.get('/profile', /*withAuth,*/ async (req, res) => {
   try {
