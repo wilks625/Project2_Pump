@@ -2,22 +2,22 @@
   {
 
     "username": "Computers4real" ,
-    "firstName": "Bill",
-    "lastName": "Winklehorn",
+    "firstname": "Bill",
+    "lastname": "Winklehorn",
     "email": "WinklehornB007@aol.com",
     "password": "Trailmixed23"
   },
   {
     "username": "Pizza4me" ,
-    "firstName": "Alex",
-    "lastName": "Winklehorn",
+    "firstname": "Alex",
+    "lastname": "Winklehorn",
     "email": "WinklehornB006@yahoo.com",
     "password": "2sexy4exercise"
   },
   {
     "username": "BigTyme" ,
-    "firstName": "Don",
-    "lastName": "Burgundy",
+    "firstname": "Don",
+    "lastname": "Burgundy",
     "email": "Burgandy@channel8news.com",
     "password": "TooSwole4this"
   },
@@ -25,48 +25,49 @@
     "username": "Pump&Tone",
     "firstName": "Jacob",
     "lastName": "Fransisco",
+
     "email": "RunWitMe4fun@gmail.com",
     "password": "Igot#theruns100"
   },
   {
     "username": "SebastianJ88",
-    "firstName": "Sebastian",
-    "lastName": "Jeffersly",
+    "firstname": "Sebastian",
+    "lastname": "Jeffersly",
     "email": "Jeffersly02@hotmail.com",
     "password": "Bo$$88"
   },
   {
     "username": "MiricaleMuscles" ,
-    "firstName": "Robert",
-    "lastName": "Gatsby",
+    "firstname": "Robert",
+    "lastname": "Gatsby",
     "email": "Gatsby@gmail.com",
     "password": "Bobis2sexy"
   },
   {
     "username": "Rafeal98" ,
-    "firstName": "Rafeal",
-    "lastName": "Boardbottom",
+    "firstname": "Rafeal",
+    "lastname": "Boardbottom",
     "email": "BottomB@yahoo.com",
     "password": "Started@Dabottom2"
   },
   {
     "username": "Kevin99" ,
-    "firstName": "Kevin",
-    "lastName": "Kandistidious",
+    "firstname": "Kevin",
+    "lastname": "Kandistidious",
     "email": "StudiousK@gmail.com",
     "password": "#Kevin400"
   },
   {
     "username": "McLuvin" ,
-    "firstName": "Marlon",
-    "lastName": "Davidson",
+    "firstname": "Marlon",
+    "lastname": "Davidson",
     "email": "DavidsonM@aol.com",
     "password": "#Cash69Money"
   },
   {
     "username": "Rod00" ,
-    "firstName": "Rodney",
-    "lastName": "Redwarn",
+    "firstname": "Rodney",
+    "lastname": "Redwarn",
     "email": "RedwarnR@hotmail.com",
     "password": "#Read2me"
   },
