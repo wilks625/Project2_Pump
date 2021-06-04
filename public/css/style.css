@@ -19,6 +19,14 @@
   font-weight: bold;
   margin-left: -5px;
 } */
+.card-body {
+  background-color: yellow;
+}
+
+.card-text {
+  font-style: italic;
+}
+
 nav {
   background: #2e3135;
   color: #fff;
