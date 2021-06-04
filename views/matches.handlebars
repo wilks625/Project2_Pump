@@ -3,20 +3,24 @@
 
 {{#each profiles as |profiles| }}
 
-
+<h3>
+<a href="/matches/{{id}}">{{user.firstname}} {{user.lastname}}</a>
+</h3>
 {{!-- <h3>{{user.firstname}} {{user.lastname}}</h3> --}}
 <!--<p>{{user.username}}</p>
 <p>Activities: {{activities}}</p>  
 <p>Bio: {{bio}}</p>  
 <p>Age: {{age}}</p>  
 <p>Location: {{location}}</p>
-<p>snapchat: {{snapchat}}</p>  
+{{!-- <p>snapchat: {{snapchat}}</p>  
 <p>instagram: {{instagram}}</p>  
 <p>email: {{user.email}}</p>  
+
 <p>phonenumber: {{phonenumber}}</p>-->  
 
 <div class="card">
     <img src="./images/photo-of-woman-8.jpg" class="card-img-top" alt="...">
+
     <div class="card-body">
       <h4 class="card-title">{{img}}</h4>
       <h5 class="card-title">{{user.firstname}} {{user.lastname}}</h5>
@@ -156,7 +160,7 @@
     </div>
     
   </div>
-</div>    --}}
+</div>    
 
 </body>
 
