@@ -14,15 +14,15 @@
 <p>instagram: {{instagram}}</p>  
 <p>email: {{user.email}}</p>  
 <p>phonenumber: {{phonenumber}}</p>-->  
-<div class="m-2 card-group">
-<div class="m-2 card">
-    <img src="..." class="card-img-top" alt="...">
+
+<div class="card">
+    <img src="./images/photo-of-woman-8.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h4 class="card-title">{{img}}</h4>
       <h5 class="card-title">{{user.firstname}} {{user.lastname}}</h5>
       <p class="card-text">{{activities}}</p>
     </div>
-    <div class="card-footer">
+    {{!-- <div class="card-footer">
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
@@ -48,10 +48,11 @@
     </div>
     <div class="card-footer">
       <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
+    </div> --}}
+  
 </div>
 {{/each}}
+
 
 
 
