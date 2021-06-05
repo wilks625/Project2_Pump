@@ -136,7 +136,6 @@ router.get('/icebreak',   (req, res) => {
 //     const profiles = profileData.map((profile) => profile.get({ plain: true }));
 //     console.log(profiles)
 
-
     // Pass serialized data and session flag into template
     res.render('icebreak', { 
       // profiles,
@@ -159,8 +158,8 @@ router.get('/login', (req, res) => {
 
 
 
-
-router.get('/userprofile', /*withAuth,*/ async (req, res) => {
+//user's profile route
+router.get('/userprofile', withAuth, async (req, res) => {
   try {
     // Get all profiles and JOIN with user data
     // const profileData = await Profile.findAll({
@@ -176,7 +175,7 @@ router.get('/userprofile', /*withAuth,*/ async (req, res) => {
       include: [
         { 
           model: Profile,
-          attributes: ['bio', 'activities', 'age', 'location'],
+          attributes: ['bio', 'activities', 'age', 'location', 'snapchat', 'instagram', 'phonenumber'],
          }
       ],
     });

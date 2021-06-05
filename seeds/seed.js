@@ -12,15 +12,30 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const profile of profileData) {
+  for (var index = 0; index < users.length; index++) {
+    const profile = profileData[index];
     await Profile.create({
       ...profile,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+      user_id: users[index].id,
     });
   }
+
+  // for (const profile of profileData) {
+  //   await Profile.create({
+  //     ...profile,
+  //     user_id: users[Math.floor(Math.random() * users.length)].id,
+  //   });
+  // }
 
   process.exit(0);
 };
 
 seedDatabase();
 
+// for (var index = 0; index < users.length; index++) {
+//   const profile = profileData[index];
+//   await Profile.create({
+//     ...profile,
+//     user_id: users[index].id,
+//   });
+// }
