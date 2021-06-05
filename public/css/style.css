@@ -145,3 +145,13 @@ body {
 h1 {
   color: #fff;
 }
+
+.matches-wrapper {
+  display:flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 30%;
+  padding:1rem;
+  margin-left: 1%;
+}
