@@ -155,3 +155,32 @@ h1 {
   padding:1rem;
   margin-left: 1%;
 }
+/* icebreak styling  */
+img {
+  height: auto;
+max-width: 100%;
+}
+.container {
+  position: relative;
+  max-width: 100%;
+  
+  background-color: #2e3135;
+ 
+}
+
+/* Bottom right text */
+.textblock{
+  opacity: 95%;
+  position: absolute;
+  bottom:50px;
+  right: 50px;
+  background-color: grey;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
+  
+}
+#text{
+  color:white;
+}
