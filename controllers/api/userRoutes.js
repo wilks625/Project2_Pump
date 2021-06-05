@@ -50,7 +50,8 @@ router.post('/', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-
+console.log("poop")
+console.log(userData)
     if (!userData) {
       res
         .status(400)
@@ -105,6 +106,7 @@ router.put('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   // create a new user
+  console.log("stephen")
   try {
     const userData = await User.create(...req.body);
     res.status(200).json(userData);
