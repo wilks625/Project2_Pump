@@ -96,7 +96,7 @@ router.put('/:id', async (req, res) => {
       { username: req.body.username },
       { returning: true, where: {id: req.params.id} }
     )
-    res.status(200).json(categoryData);
+    res.status(200).json(userData);
   } catch (err) {
     res.status(400).json(err);
   }

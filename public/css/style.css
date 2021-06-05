@@ -20,7 +20,7 @@
   margin-left: -5px;
 } */
 .card-body {
-  background-color: yellow;
+  background-color: rgb(228, 228, 228);
 }
 
 .card-text {
@@ -144,4 +144,14 @@ body {
 #ui label,
 h1 {
   color: #fff;
+}
+
+.matches-wrapper {
+  display:flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 30%;
+  padding:1rem;
+  margin-left: 1%;
 }
