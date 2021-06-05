@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { Profile, User } = require('../models');
-// const withAuth = require('../utils/auth');
-// router.get ('/', (req, res) => {
-//   res.redirect('/profile') 
-// })
+const withAuth = require('../utils/auth');
+router.get ('/', (req, res) => {
+  res.redirect('/login') 
+})
 // router.get('/', async (req, res) => {
 //   try {
 //     // Get all profiles and JOIN with user data
@@ -170,7 +170,7 @@ router.get('/icebreak',   (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/userprofile');
     return;
   }
   res.render('login');
