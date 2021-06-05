@@ -156,15 +156,15 @@ h1 {
   margin-left: 1%;
 }
 /* icebreak styling  */
-img {
+/* img {
   height: auto;
 max-width: 100%;
-}
-.container {
+} */
+#container-icebreak {
   position: relative;
   max-width: 100%;
-  
-  background-color: #2e3135;
+  opacity: 90%;
+  background-color: white;
  
 }
 
@@ -172,8 +172,8 @@ max-width: 100%;
 .textblock{
   opacity: 95%;
   position: absolute;
-  bottom:50px;
-  right: 50px;
+  /* bottom:50px;
+  right: 50px; */
   background-color: grey;
   color: white;
   padding-left: 20px;
