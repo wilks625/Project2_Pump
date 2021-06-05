@@ -155,6 +155,15 @@ h1 {
   padding:1rem;
   margin-left: 1%;
 }
+
+.container {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 300px;
+  /* background-color: white; */
+ 
+}
 /* icebreak styling  */
 /* img {
   height: auto;
