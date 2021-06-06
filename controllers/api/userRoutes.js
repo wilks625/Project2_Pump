@@ -34,20 +34,35 @@ router.get('/', async (req, res) => {
 
 
 
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
+  console.log("poop1234")
+  
   try {
     const userData = await User.create(req.body);
-
+    console.log("poop123")
     req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
+      // req.session.user_id = userData.id;
+      // req.session.logged_in = true;
 
       res.status(200).json(userData);
+      console.log(userData)
     });
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
+// router.post('/register', async (req, res) => {
+//   // create a new user
+//   console.log("stephenwhatsup")
+//   try {
+//     const userData = await User.create(...req.body);
+//     res.status(200).json(userData);
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+
+// });
 
 router.post('/login', async (req, res) => {
   try {
@@ -99,18 +114,6 @@ router.put('/:id', async (req, res) => {
       { username: req.body.username },
       { returning: true, where: {id: req.params.id} }
     )
-    res.status(200).json(userData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-
-});
-
-router.post('/', async (req, res) => {
-  // create a new user
-  console.log("stephen")
-  try {
-    const userData = await User.create(...req.body);
     res.status(200).json(userData);
   } catch (err) {
     res.status(400).json(err);

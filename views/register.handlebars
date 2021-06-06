@@ -6,39 +6,39 @@
                 <div id="ui">
                     <h1 class="text-center">REGISTRATION FORM</h1>
                     <br>
-                    <form class="form-group text-center">
+                    <form class="form signup-form text-center">
 ​
                         <div class="row">
                             <div class="col-lg-6">
                                 <label>First Name:</label>
-                                <input type="text" name="fname" class="form-control"
+                                <input type="text" name="fname" class="form-control" id="firstname-signup"
                                     placeholder="Enter your first name..">
                             </div>
                             <div class="col-lg-6">
                                 <label>Last Name:</label>
-                                <input type="text" name="lname" class="form-control"
+                                <input type="text" name="lname" class="form-control" id="lastname-signup"
                                     placeholder="Enter your last name..">
                             </div>
                         </div>
                         <br>
                         <label>Username</label>
-                        <input type="email" name="email" class="form-control" placeholder="Enter your username..">
+                        <input type="text" name="email" class="form-control" id="username-signup" placeholder="Enter your username..">
                         <br>
                         <label>Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="Enter your email..">
+                        <input type="text" name="email" class="form-control" id="email-signup" placeholder="Enter your email..">
 ​
                         <br>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <label>Password:</label>
-                                <input type="password" name="fname" class="form-control"
-                                    placeholder="Enter your password..">
+                                <input type="text" name="password" class="form-control" id="password-signup"
+                                    placeholder="Enter a password..">
                             </div>
-                            <div class="col-lg-6">
+                            {{!-- <div class="col-lg-6">
                                 <label>Re-type Password:</label>
-                                <input type="password" name="lname" class="form-control"
+                                <input type="text" name="password" class="form-control" id="password-signup"
                                     placeholder="Re-type password..">
-                            </div>
+                            </div> --}}
                             <br>
                             <!-- <div class="row">
                                     <label>Phone number (optional):</label>
@@ -71,7 +71,7 @@
         </div>
     </div>
 ​
-​   <script src="./js/login.js"></script>
+​   <script src="./js/register.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
