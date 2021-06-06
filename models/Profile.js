@@ -46,6 +46,11 @@ Profile.init(
         key: 'id',
       },
     },
+    profile_img_url: {
+      type: DataTypes.STRING,
+      allowNull: true, }
+
+    
   },
   {
     sequelize,
