@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Profile, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// searches for all profiles within database
 router.get('/', async (req, res) => {
   try {
     const profileData = await Profile.findAll({
@@ -14,6 +15,7 @@ router.get('/', async (req, res) => {
   }
 })
 
+// searches for profile based on id
 router.get('/:id', async (req, res) => {
   try {
     const profileData = await Profile.findByPk(req.params.id, {
@@ -31,6 +33,7 @@ router.get('/:id', async (req, res) => {
   }
 })
 
+//creates profile
 router.post('/', withAuth , async (req, res) => {
   try {
     const newProfile = await Profile.create({
@@ -82,6 +85,23 @@ router.put('/:id', async (req, res) => {
     res.status(400).json(err);
   }
 
+});
+
+//This route will update the profile object 
+router.put('/userprofile/:id', async (req, res) => {
+  try {
+    const profileData = await Profile.update(
+      { 
+        location: req.body.location ,
+       returning: true
+      },
+      {where: {id: parseInt(req.params.id)} }
+    )
+    console.log(profileData)
+    res.status(200).json(profileData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 module.exports = router;
