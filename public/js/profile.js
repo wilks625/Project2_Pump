@@ -1,3 +1,26 @@
+const updateProfileHandler = async (event) => {
+  event.preventDefault();
+
+  const location
+  const age
+  const use
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const newFormHandler = async (event) => {
   event.preventDefault();
 
