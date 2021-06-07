@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Profile, User } = require('../../models');
-// const withAuth = require('../../utils/auth');
+const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
   }
 })
 
-router.post('/',/* withAuth ,*/ async (req, res) => {
+router.post('/', withAuth , async (req, res) => {
   try {
     const newProfile = await Profile.create({
       ...req.body,

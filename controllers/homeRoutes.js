@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Profile, User } = require('../models');
+const { Profile, User, Image } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get ('/', (req, res) => {
-  res.redirect('/login') 
-})
+// router.get ('/', (req, res) => {
+//   res.redirect('/login') 
+// })
 // router.get('/', async (req, res) => {
 //   try {
 //     // Get all profiles and JOIN with user data
@@ -102,7 +102,7 @@ router.get('/matches', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['email', 'password', 'username', 'firstname', 'lastname'],
+          attributes: ['email', 'password', 'username', 'firstname', 'lastname', ],
         },
       ],
     });
@@ -119,6 +119,7 @@ router.get('/matches', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //icebreak page
 router.get('/icebreak',   (req, res) => {
   try {
@@ -175,7 +176,7 @@ router.get('/userprofile', withAuth, async (req, res) => {
       include: [
         { 
           model: Profile,
-          attributes: ['bio', 'activities', 'age', 'location', 'snapchat', 'instagram', 'phonenumber'],
+          attributes: ['bio', 'activities', 'age', 'location', 'snapchat', 'instagram', 'phonenumber', 'profile_img_url'],
          }
       ],
     });

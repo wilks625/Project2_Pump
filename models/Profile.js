@@ -13,15 +13,15 @@ Profile.init(
     },
     location: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     bio: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     activities: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     snapchat: {
       type: DataTypes.STRING,
