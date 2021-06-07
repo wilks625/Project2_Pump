@@ -217,5 +217,44 @@ router.get('/profile', /*withAuth,*/ async (req, res) => {
     res.status(500).json(err);
   }
 });
+//update profile page 
+//user's profile route
+router.get('/userprofile/:id', withAuth, async (req, res) => {
+  try {
+    // Get all profiles and JOIN with user data
+    // const profileData = await Profile.findAll({
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes: ['email', 'password', 'username', 'firstname', 'lastname'],
+    //     },
+    //   ],
+    // });
+    const profileData = await User.findByPk(req.session.user_id, {
+      // attributes: { exclude: ['password'] },
+      include: [
+        { 
+          model: Profile,
+          attributes: ['bio', 'activities', 'age', 'location', 'snapchat', 'instagram', 'phonenumber', 'profile_img_url'],
+         }
+      ],
+    });
+console.log(profileData)
+    // Serialize data so the template can read it
+    // const profiles = profileData.map((profile) => profile.get({ plain: true }));
+    const profile = profileData.get({ plain: true });
+    
+    // Pass serialized data and session flag into template
+    res.render('updateProfile', { 
+      ...profile,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+//end
 
 module.exports = router;
