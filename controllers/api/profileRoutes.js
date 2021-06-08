@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Profile, User } = require('../../models');
+const { aggregate } = require('../../models/User');
 const withAuth = require('../../utils/auth');
 
 // searches for all profiles within database
@@ -67,24 +68,49 @@ router.delete('/:id', /* withAuth ,*/ async (req, res) => {
   }
 });
 
-router.put('/:id', async (req, res) => {
-  // update a category by its `id` value
-  console.log(req.body)
-  console.log(req.params)
+// router.put('/:id', async (req, res) => {
+//   // update a category by its `id` value
+//   console.log(req.body)
+//   console.log(req.params)
+//   try {
+//     const profileData = await Profile.update(
+//       { 
+//         location: req.body.location ,
+//        returning: true
+//       },
+//       {where: {id: parseInt(req.params.id)} }
+//     )
+//     console.log(profileData)
+//     res.status(200).json(profileData);
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+
+// });
+
+//This route will update the profile object 
+router.put('/userprofile/:id', async (req, res) => {
+  console.log(req.body, "test")
   try {
-    const userData = await User.update(
+    const profileData = await Profile.update(
       { 
         location: req.body.location ,
+        bio: req.body.bio,
+        activities: req.body.activities,
+        age: req.body.age,
+        phonenumber: req.body.phonenumber,
+        snapchat: req.body.snapchat,
+        instagram: req.body.instagram,
+
        returning: true
       },
-      {where: {id: parseInt(req.params.id)} }
+      {where: {user_id: parseInt(req.params.id)} }
     )
-    console.log(userData)
-    res.status(200).json(userData);
+    console.log(profileData)
+    res.status(200).json(profileData);
   } catch (err) {
     res.status(400).json(err);
   }
-
 });
 
 //This route will update the profile object 
