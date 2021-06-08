@@ -2,17 +2,17 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 //search for all users in database
-router.get('/', async (req, res) => {
-  try {
-    const userData = await User.findAll({
-      // include: {model: User}
-    })
-    // console.log(profileData)
-    res.status(200).json(userData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-})
+// router.get('/', async (req, res) => {
+//   try {
+//     const userData = await User.findAll({
+//       // include: {model: User}
+//     })
+//     // console.log(profileData)
+//     res.status(200).json(userData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// })
 
 //search user by id within database
 // router.get('/:id', async (req, res) => {

@@ -1,10 +1,10 @@
-const updateProfileHandler = async (event) => {
-  event.preventDefault();
+// const updateProfileHandler = async (event) => {
+//   event.preventDefault();
 
-  const location
-  const age
-  const use
-}
+//   const location
+//   const age
+//   const use
+// }
 
 
 
