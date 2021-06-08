@@ -31,7 +31,6 @@ let userid = event.target.getAttribute("data-id");
 //  } 
 };
 
-
 document
   .getElementById('updateprofilebutton')
   .addEventListener('click', updateProfile);

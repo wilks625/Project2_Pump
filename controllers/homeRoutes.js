@@ -3,74 +3,14 @@ const { Profile, User, Image } = require('../models');
 const withAuth = require('../utils/auth');
 const zipcodes = require('zipcodes-nearby');
 
-// router.get ('/', (req, res) => {
-//   res.redirect('/login') 
-// })
-// router.get('/', async (req, res) => {
-//   try {
-//     // Get all profiles and JOIN with user data
-//     const profileData = await Profile.findAll({
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['username'],
-//         },
-//       ],
-//     });
-//     // Serialize data so the template can read it
-//     const profiles = profileData.map((profile) => profile.get({ plain: true }));
-//     console.log(profiles)
-//     // Pass serialized data and session flag into template
-//     res.render('profile', { 
-//       profiles, 
-//       logged_in: req.session.logged_in 
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-// router.get('/profile/:id', async (req, res) => {
-//   try {
-//     const profileData = await Profile.findByPk(req.params.id, {
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-//     const profile = profileData.get({ plain: true });
-//     res.render('profile', {
-//       ...profile,
-//       logged_in: req.session.logged_in
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-
 router.get('/register', async (req, res) => {
   try {
-    // const profileData = await Profile.findByPk(req.params.id, {
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['firstname', 'lastname'],
-    //     },
-    //   ],
-    // });
-// console.log(profileData)
-    // const profile = profileData.get({ plain: true });
     res.render('register', {
-      // ...profile,
-      // logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
 
 //single matches page
 router.get('/match/:id', async (req, res) => {
@@ -83,7 +23,6 @@ router.get('/match/:id', async (req, res) => {
         },
       ],
     });
-// console.log(profileData)
     const profile = profileData.get({ plain: true });
     res.render('clickedMatch', {
       ...profile,
@@ -93,8 +32,6 @@ router.get('/match/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-//end
-
 
 router.get('/matches/:id', async (req, res) => {
   try {
@@ -143,10 +80,8 @@ router.get('/matches', async (req, res) => {
         },
       ],
     });
-// console.log(profileData)
     // Serialize data so the template can read it
     const profiles = profileData.map((profile) => profile.get({ plain: true }));
-    // console.log(profiles)
     // Pass serialized data and session flag into template
     res.render('matches', { 
       profiles,
@@ -182,17 +117,7 @@ router.get('/login', (req, res) => {
 //user's profile route
 router.get('/userprofile', withAuth, async (req, res) => {
   try {
-    // Get all profiles and JOIN with user data
-    // const profileData = await Profile.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['email', 'password', 'username', 'firstname', 'lastname'],
-    //     },
-    //   ],
-    // });
     const userData = await User.findByPk(req.session.user_id, {
-      // attributes: { exclude: ['password'] },
       include: [
         { 
           model: Profile,
@@ -202,9 +127,7 @@ router.get('/userprofile', withAuth, async (req, res) => {
     });
 console.log(userData)
     // Serialize data so the template can read it
-    // const profiles = profileData.map((profile) => profile.get({ plain: true }));
     const user = userData.get({ plain: true });
-    
     // Pass serialized data and session flag into template
     res.render('userprofile', { 
       ...user,
@@ -220,7 +143,6 @@ router.get('/profile', /*withAuth,*/ async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const profileData = await User.findByPk(req.session.user_id, {
-      // attributes: { exclude: ['password'] },
       include: [
         { 
           model: User,
@@ -237,19 +159,11 @@ router.get('/profile', /*withAuth,*/ async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //update profile page 
 //user's profile route
 router.get('/userprofile/:id', withAuth, async (req, res) => {
   try {
-    // Get all profiles and JOIN with user data
-    // const profileData = await Profile.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['email', 'password', 'username', 'firstname', 'lastname'],
-    //     },
-    //   ],
-    // });
     const profileData = await User.findByPk(req.session.user_id, {
       // attributes: { exclude: ['password'] },
       include: [
@@ -274,8 +188,5 @@ console.log(profileData)
     res.status(500).json(err);
   }
 });
-
-
-//end
 
 module.exports = router;
