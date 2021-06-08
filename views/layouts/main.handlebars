@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pump Me!</title>
+  <title>Muscle-Mate</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
   {{!-- down --}}
@@ -37,20 +37,17 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/login">THESE NEED TO BE MODIFIED BEFORE RELEASE</a>
+              <a class="nav-link" href="/login">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
-            <li class="nav-item">
+            {{!-- <li class="nav-item">
               <a class="nav-link" href="/register">Register</a>
-            </li>
+            </li> --}}
             <li class="nav-item">
-              <a class="nav-link" href="/matches">Matches</a>
+              <a class="nav-link" href="/matches/{{profile.location}}">Matches</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/matches/1">Clicked matches</a>
-            </li>
+            {{!-- <li class="nav-item">
+              <a class="nav-link" href="/match/:id">Clicked matches</a>
+            </li> --}}
             
             <li class="nav-item">
               <a class="nav-link" href="/icebreak">Icebreaker</a>
@@ -63,14 +60,11 @@
         </div>
       </nav>
     </div>
-    {{!-- carlos end nav --}}
+    
 
     <div class="flex-column justify-space-around">
       <header class="display-flex justify-space-between align-center p-2">
-        <h1>
-          <span role="img" aria-label="money">💸</span>
-          <a href="/">Fund My Project!</a>
-        </h1>
+        
         <nav>
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
@@ -112,5 +106,8 @@
     {{!-- script end --}}
   </body>
 <script src="/js/logout.js"></script>
-<script src="/js/profile.js"></script>
+
+//<script src="/js/profile.js"></script>
+
+
 </html>

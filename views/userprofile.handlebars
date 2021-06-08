@@ -24,6 +24,7 @@
                         <div class="card-block text-center text-white">
                             {{!-- {{profile.profile_img_url}} --}}
                             {{!-- {{profile_img_url}} --}}
+                            <br>
                             <img src="{{profile.profile_img_url}}" class="card-img-top" alt="...">
                             {{!-- <i class="fas fa-user-tie fa-7x mt-5"></i> --}}
                             {{!-- <h2 class="font-weight-bold mt-4">{{profile.username}}</h2> --}}
@@ -69,14 +70,20 @@
                             </div>
                         </div>
 
-                        <a href="/matches">
-                        
-                  <input type="submit" name="findmatch" value="Find a MuscleMate!" class="btn btn-primary btn-inline btn-lg mb-4"></input>
-                </a>
-                <a href="/userprofile/{{id}}">
-                  <input type="submit" name="updateainfo" value="Update Info" class="btn btn-primary btn-inline btn-lg mb-4"></input>
-                </a>
-                        
+                        <ul class="list-unstyled d-flex justify-content-center mt-4">
+                            <!-- <li><a href="#"><i class="fab fa-facebook-f px-3 h4 text-info"></i></a></li> -->
+                            <!-- <li><a href="#"><i class="fab fa-twitter px-3 h4 text-info"></i></a></li> -->
+                            <li><a href="instagram.com/{{profile.instagram}}"><i class="fab fa-instagram px-3 h4 text-info"></i>{{profile.instagram}}</a></li>
+                            <li><a href="#"><i class="fab fa-snapchat px-3 h4 text-info"></i></a>{{profile.snapchat}}</li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                        <a href="/matches/{{profile.location}}">
+                            <input type="submit" name="findmatch" value="Find a MuscleMate!" class="btn btn-primary btn-inline btn-lg mb-4"></input>
+                        </a>
+                        <a href="/userprofile/{{id}}">
+                            <input type="submit" name="updateainfo" value="Update Info" class="btn btn-primary btn-inline btn-lg mb-4"></input>
+                        </a>
+                        </div>
                         <!-- <hr class="bg-primary">
                         <div class="row">
                             <div class="col-sm-6">
@@ -88,12 +95,7 @@
                                 <h6 class="text-muted">123-456-7890</h6>
                             </div>
                         </div> -->
-                        <ul class="list-unstyled d-flex justify-content-center mt-4">
-                            <!-- <li><a href="#"><i class="fab fa-facebook-f px-3 h4 text-info"></i></a></li> -->
-                            <!-- <li><a href="#"><i class="fab fa-twitter px-3 h4 text-info"></i></a></li> -->
-                            <li><a href="#"><i class="fab fa-instagram px-3 h4 text-info"></i></a></li>
-                            <li><a href="#"><i class="fab fa-snapchat px-3 h4 text-info"></i></a></li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>

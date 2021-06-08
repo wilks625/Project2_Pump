@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Profile, User, Image } = require('../models');
 const withAuth = require('../utils/auth');
+const zipcodes = require('zipcodes-nearby');
 
 // router.get ('/', (req, res) => {
 //   res.redirect('/login') 
@@ -71,8 +72,8 @@ router.get('/register', async (req, res) => {
 });
 
 
-//single macthes page
-router.get('/matches/:id', async (req, res) => {
+//single matches page
+router.get('/match/:id', async (req, res) => {
   try {
     const profileData = await Profile.findByPk(req.params.id, {
       include: [
@@ -93,6 +94,42 @@ router.get('/matches/:id', async (req, res) => {
   }
 });
 //end
+
+
+router.get('/matches/:id', async (req, res) => {
+  try {
+    const profileZipCode = req.params.id;
+    let nearbyZipcodes = [];
+
+    await zipcodes.near(profileZipCode, 8047).then(function(zipcodes){
+      nearbyZipcodes = zipcodes;
+    });
+
+    // make the sql query
+    const profileData = await Profile.findAll({
+      where: {
+        location: nearbyZipcodes
+      },
+      include: [
+        {
+          model: User,
+          attributes: ['email', 'username', 'firstname', 'lastname', ],
+        },
+      ],
+    });
+    
+    // render the page
+    const profiles = profileData.map((profile) => profile.get({ plain: true }));
+    res.render('matches', { 
+      profiles,
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console.log("butt");
+    console.log(err);
+  }
+});
 
 
 router.get('/matches', async (req, res) => {
@@ -123,24 +160,7 @@ router.get('/matches', async (req, res) => {
 //icebreak page
 router.get('/icebreak',   (req, res) => {
   try {
-    // Get all profiles and JOIN with user data
-    // const profileData =  Profile.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['email', 'password', 'username', 'firstname', 'lastname'],
-    //     },
-    //   ],
-    // });
-// console.log(profileData)
-//     // Serialize data so the template can read it
-//     const profiles = profileData.map((profile) => profile.get({ plain: true }));
-//     console.log(profiles)
-
-    // Pass serialized data and session flag into template
     res.render('icebreak', { 
-      // profiles,
-      // logged_in: req.session.logged_in 
     });  
   } catch (err) {
     res.status(500).json(err);
