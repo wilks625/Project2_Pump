@@ -57,7 +57,7 @@ You and your group will use everything you’ve learned over the past six units 
 
 
 Deployed Application: 
-[HerokuMuscleMates](https://github.com/crsmith01/Musical)
+[HerokuMuscleMates](https://whispering-harbor-84238.herokuapp.com/login)
 
 ## screenshot
 ![screenshot](./public/images/home.png)
