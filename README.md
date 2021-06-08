@@ -2,9 +2,9 @@
 # MuscleMates
 
 ## About The Project
-```
+
 This project is an application used to find gym goers in a specific area. Users can create a profile by entering their first and last names, eamil, username, and password. After users are logged in, they are presented with their profile page. Their profile page contains a picture, bio, activities, name, age, phone number. email, and location. After a profile is created, users can then find their matches within a 5-mile radius of their area. 
-```
+
 ## Technologies:
 - NPM Zip Code
 
@@ -58,6 +58,7 @@ You and your group will use everything you’ve learned over the past six units 
 
 Deployed Application: 
 [HerokuMuscleMates](https://whispering-harbor-84238.herokuapp.com/login)
+Search by central VA zip code to find a MuscleMate!
 
 ## screenshot
 ![screenshot](./public/images/home.png)
