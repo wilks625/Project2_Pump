@@ -247,7 +247,8 @@ console.log(profileData)
     // Pass serialized data and session flag into template
     res.render('updateProfile', { 
       ...profile,
-      logged_in: true
+      logged_in: true,
+      user_id: req.session.user_id
     });
   } catch (err) {
     res.status(500).json(err);
