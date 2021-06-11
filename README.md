@@ -56,12 +56,26 @@ You and your group will use everything you’ve learned over the past six units 
 ```
 
 
-Deployed Application: 
-[HerokuMuscleMates](https://whispering-harbor-84238.herokuapp.com/login)
+
+## Deployed Application: 
+
+## [HerokuMuscleMates](https://whispering-harbor-84238.herokuapp.com/login)
 Search by central VA zip code to find a MuscleMate!
 
-## screenshot
-![screenshot](./public/images/home.png)
+## GitHub Repository 
+
+## [Github](https://github.com/wilks625/Project2_Pump)
+
+
+![Application Photos](./public/images/home.png)
+![Application Photos](./public/images/musclemate1.png)
+![Application Photos](./public/images/musclemate2.png)
+![Application Photos](./public/images/musclemate3.png)
+![Application Photos](./public/images/musclemate4.png)
+
+
+
+
 
 ## Brought To You by:
 
