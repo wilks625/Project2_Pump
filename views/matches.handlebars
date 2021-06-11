@@ -1,35 +1,16 @@
 <div class="matches-wrapper">
 {{#each profiles as |profiles| }}
-{{!-- <h3>
-<a href="/matches/{{id}}">{{user.firstname}} {{user.lastname}}</a>
-</h3> --}}
-{{!-- <h3>{{user.firstname}} {{user.lastname}}</h3> --}}
-{{!-- <p>{{user.username}}</p>
-<p>Activities: {{activities}}</p>  
-<p>Bio: {{bio}}</p>  
-<p>Age: {{age}}</p>  
-<p>Location: {{location}}</p> --}}
-{{!-- <p>snapchat: {{snapchat}}</p>  
-<p>instagram: {{instagram}}</p>  
-<p>email: {{user.email}}</p>  
-<p>phonenumber: {{phonenumber}}</p>   --}}
 <div class="m-2 card">
     <img src="{{profile_img_url}}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h2 class="card-title"><a href="/matches/{{id}}">{{user.firstname}} {{user.lastname}}</a></h2>
-      {{!-- <p class="card-text1">{{user.username}}</p> --}}
+      <h2 class="card-title"><a href="/match/{{id}}">{{user.firstname}} {{user.lastname}}</a></h2>
       <p class="card-text">{{activities}}</p>
     </div>
     <div class="card-footer">
       <small class="text-muted">Finding love in all the right places</small>
     </div>
-    {{!-- <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div> --}}
   </div>
 {{/each}}
 </div>
-
-
 </div>   
 

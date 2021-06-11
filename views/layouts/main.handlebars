@@ -4,19 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pump Me!</title>
+  <title>Muscle-Mate</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
-  {{!-- down --}}
-  <!-- Bootstrap -->
-  {{!-- bulma link --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-  <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 </head>
@@ -24,7 +17,7 @@
 <body>
 
 
-  {{!-- carlos start nav --}}
+
 
   <body data-spy="scroll" data-target="#navbarResponsive">
     <div id="home">
@@ -33,25 +26,14 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/login">THESE NEED TO BE MODIFIED BEFORE RELEASE</a>
+              <a class="nav-link" href="/login">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
+              <a class="nav-link" href="/matches/{{profile.location}}">Matches</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/register">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/matches">Matches</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/matches/1">Clicked matches</a>
-            </li>
-            
             <li class="nav-item">
               <a class="nav-link" href="/icebreak">Icebreaker</a>
             </li>
@@ -59,18 +41,14 @@
               <a class="nav-link" href="#logout">LogOut</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </div>
-    {{!-- carlos end nav --}}
+    
 
     <div class="flex-column justify-space-around">
       <header class="display-flex justify-space-between align-center p-2">
-        <h1>
-          <span role="img" aria-label="money">💸</span>
-          <a href="/">Fund My Project!</a>
-        </h1>
+        
         <nav>
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
@@ -95,8 +73,6 @@
     <script src="/js/logout.js"></script>
     {{/if}}
 
-
-
     {{!-- script start --}}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -113,4 +89,6 @@
   </body>
 <script src="/js/logout.js"></script>
 <script src="/js/profile.js"></script>
+
+
 </html>

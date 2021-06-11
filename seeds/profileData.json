@@ -8,7 +8,7 @@
     "instagram":"Oldbutt_Notdead",
     "age": 67,
     "phonenumber": "8047738967",
-    "profile_img_url": "./images/image_4.jpg"
+    "profile_img_url": "/images/image_4.jpg"
   },
   {
     "username":"Pizza4me",
@@ -19,7 +19,7 @@
     "instagram":"Alexercise99",
     "age": 34,
     "phonenumber":"9034506689",
-    "profile_img_url": "./images/image_12.jpg"
+    "profile_img_url": "/images/image_12.jpg"
   }, 
   {
     "username":"BigTyme",
@@ -30,7 +30,7 @@
     "instagram":"Big_Werk96",
     "age": 55,
     "phonenumber":"7578899345",
-    "profile_img_url": "./images/image_14.jpg"
+    "profile_img_url": "/images/image_14.jpg"
   },
   {
     "username":"Pump&Tone",
@@ -41,7 +41,7 @@
     "instagram":"jacobRuns4U",
     "age": 46,
     "phonenumber":"18003345678",
-    "profile_img_url": "./images/image_1.jpg"
+    "profile_img_url": "/images/image_1.jpg"
   },
   {
     "username":"SebastianJ88",
@@ -52,7 +52,7 @@
     "instagram":"SeeMeWorkout",
     "age": 38,
     "phonenumber":"8045551676",
-    "profile_img_url": "./images/image_19.jpg"
+    "profile_img_url": "/images/image_19.jpg"
   },
   {
     "username":"MiricaleMuscles",
@@ -63,7 +63,7 @@
     "instagram":"BobBuilds",
     "age": 35,
     "phonenumber":"4348984435",
-    "profile_img_url": "./images/image_15.jpg"
+    "profile_img_url": "/images/image_15.jpg"
   },
   {
     "username":"Rafeal98",
@@ -74,7 +74,7 @@
     "instagram":"RafealM_98",
     "age": 29,
     "phonenumber":"9974345566",
-    "profile_img_url": "./images/image_3.jpg"
+    "profile_img_url": "/images/image_3.jpg"
   },
   {
     "username":"Kevin99",
@@ -85,7 +85,7 @@
     "instagram":"KevinHere4U",
     "age": 22,
     "phonenumber":"8045578989",
-    "profile_img_url": "./images/image_5.jpg"
+    "profile_img_url": "/images/image_5.jpg"
   },
   {
     "username":"McLuvin",
@@ -96,7 +96,7 @@
     "instagram":"Mc_Daddy48",
     "age": 73,
     "phonenumber":"8041216675",
-    "profile_img_url": "./images/image_2.jpg"
+    "profile_img_url": "/images/image_2.jpg"
   },
   {
     "username":"Rod00",
@@ -107,7 +107,7 @@
     "instagram":"Well_Read",
     "age": 34,
     "phonenumber":"4345569978",
-    "profile_img_url": "./images/image_8.jpg"
+    "profile_img_url": "/images/image_8.jpg"
   },
   {
      "username":"JacobisPumped",
@@ -118,7 +118,7 @@
       "instagram":"",
       "age": 24,
       "phonenumber": "8047733333",
-      "profile_img_url": "./images/image_6.jpg"
+      "profile_img_url": "/images/image_6.jpg"
   },
   {
       "username":"Stephen0625",
@@ -129,7 +129,7 @@
       "instagram":"Wilks625",
       "age": 27,
       "phonenumber":"",
-      "profile_img_url": "./images/image_7.jpg"
+      "profile_img_url": "/images/image_7.jpg"
   }, 
   {
       "username":"Alexander12",
@@ -140,7 +140,7 @@
       "instagram":"",
       "age": 25,
       "phonenumber":"8043387456",
-      "profile_img_url": "./images/image_9.jpg"
+      "profile_img_url": "/images/image_9.jpg"
   },
   {
       "username":"Carlos359",
@@ -151,7 +151,7 @@
       "instagram":"",
       "age": 24,
       "phonenumber":"",
-      "profile_img_url": "./images/image_18.jpg"
+      "profile_img_url": "/images/image_18.jpg"
   },
   {
       "username":"Izzy523",
@@ -162,7 +162,7 @@
       "instagram":"",
       "age": 32,
       "phonenumber":"8045778833",
-      "profile_img_url": "./images/image_21.jpg"
+      "profile_img_url": "/images/image_21.jpg"
   },
   {
       "username":"EmilyLifts",
@@ -173,7 +173,7 @@
       "instagram":"",
       "age": 26,
       "phonenumber":"",
-      "profile_img_url": "./images/image_22.jpg"
+      "profile_img_url": "/images/image_22.jpg"
   },
   {
       "username":"JohnB",
@@ -184,7 +184,7 @@
       "instagram":"",
       "age": 29,
       "phonenumber":"8045562222",
-      "profile_img_url": "./images/image_19.jpg"
+      "profile_img_url": "/images/image_19.jpg"
   },
   {
       "username":"AmandaBynes",
@@ -195,7 +195,7 @@
       "instagram":"Cardio, dead lifing, squats",
       "age": 28,
       "phonenumber":"8046758844",
-      "profile_img_url": "./images/image_13.jpg"
+      "profile_img_url": "/images/image_13.jpg"
   },
   {
       "username":"Jessica",
@@ -206,7 +206,7 @@
       "instagram":"",
       "age": 24,
       "phonenumber":"",
-      "profile_img_url": "./images/image_11.jpg"
+      "profile_img_url": "/images/image_11.jpg"
   },
   {
       "username":"Lisa22",
@@ -217,6 +217,6 @@
       "instagram":"",
       "age": 30,
       "phonenumber":"8045632345",
-      "profile_img_url": "./images/image_16.jpg"
+      "profile_img_url": "/images/image_16.jpg"
   }
 ]
