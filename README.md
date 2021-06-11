@@ -59,7 +59,7 @@ You and your group will use everything you’ve learned over the past six units 
 
 ## Deployed Application: 
 
-## [HerokuMuscleMates](https://whispering-harbor-84238.herokuapp.com/login)
+## [Heroku: Muscle-Mates](https://whispering-harbor-84238.herokuapp.com/login)
 Search by central VA zip code to find a MuscleMate!
 
 ## GitHub Repository 
